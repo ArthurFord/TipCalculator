@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="TipStyles.css">
+  </head>
+  <body>
+
+
+  <form class="form" id="form" action="index.html" method="get">
+    <div class="header">
+      <h1>Tip Calculator</h1>
+    </div>
+    <div class="main">
+      <p>Check Amount:  <input type="number" step=".01" name="CheckAmt" value=""></p>
+        <p>Service Rating:  <select class="select" name="ServiceRating">
+          <option value="10">OK (10%)</option>
+          <option value="15">Good (15%)</option>
+          <option value="20">Great (20%)</option>
+          <option value="25">Amazing (25%)</option>
+        </select></p>
+        <p>Tip Amount:  <output name="TipAmt"></output></p>
+        <p>Total Check Amount:  <output name="Total"></output></p>
+    </div>
+    <div class="footer">
+      <input type="button" class="button" name="button" value="Calculate" onclick="calculateTip(this.form)">
+    </div>
+
+  </form>
+  <script src="TipScript.js" charset="utf-8"></script>
+  </body>
+</html>
